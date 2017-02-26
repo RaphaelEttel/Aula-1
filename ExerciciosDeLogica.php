@@ -53,7 +53,43 @@
       for ($j=1; $j <= $i; $j++) {
         echo "*";
       }
-      
+
       echo PHP_EOL;
+    }
+
+    //------------------------------------------------------------//
+    //6. Crie um programa que exiba no Console vários triângulos de *
+
+    for ($i=0; $i < 3; $i++) {
+
+      for ($j=1; $j <= 5; $j++) {
+
+        for ($k=1; $k <= $j; $k++) {
+          echo "*";
+        }
+
+        echo PHP_EOL;
+      }
+
+    }
+
+    //------------------------------------------------------------//
+    //7. Os números de Fibonacci são uma sequência de números definida recursivamente.
+    //O primeiro elemento da sequência é 0 e o segundo é 1. Os outros elementos são calculados somando os dois antecessores.
+    $aux = 0;
+    $a = 0;
+    $b = 1;
+
+    $ult = 14;
+    for ($i=1; $i <= $ult; $i++) {
+      echo $a;
+
+      if ($i != $ult) {
+        echo ", ";
+      }
+
+      $aux = $a;
+      $a = $b;
+      $b += $aux;
     }
  ?>
